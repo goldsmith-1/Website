@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../country-attraction.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+        <ul>
+          <li><a href="./../../index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="country-header">
+      <div>
+        <img src="./china-flag.jpg" />
+      </div>
+      <div class="country-brief">
+        <h1>china</h1>
+        <h2>
+          China, officially the People's Republic of China, is a vast, diverse nation boasting ancient civilizations, vibrant cultures, breathtaking landscapes and rapid modernization. With 5,000 years of history, China seamlessly blends tradition and innovation. From majestic mountains to futuristic cities, China's contrasts captivate visitors.
+        </h2>
+        <span>By: Abdullahi Maimuna (30070627)</span>
+      </div>
+    </header>
+    <div class="country-container">
+      <ul class="attractions">
+        <li class="attraction-item">
+          <h2>1. The Great Wall of China</h2>
+          <img src="./China-wall.jpg" />
+          <p>
+            
+The Great Wall of China, constructed over 2,000 years ago, stretches approximately 13,171 miles (21,196 km). This ancient series of fortifications protected China from invaders. 
+ </br>Key Highlights include
+</br>
+1. *Historic Sections*: Badaling, Mutianyu, Jinshanling
+</br>
+2. *Activities*: Hiking, camping, helicopter tours
+</br>
+3. *Ticket Prices*: $7-$15</br>
+4. *Best Time*: Spring (March-May) and autumn (September-November)
+          </p>
+          <a
+            href="https://en.m.wikipedia.org/wiki/Great_Wall_of_China"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>2. The Forbidden City</h2>
+          <img src="./Img2.jpg" />
+          <p>
+            ULocated in Beijing, the Forbidden City served as the imperial palace of Ming and Qing dynasties (1406-1912). This 180-acre complex encompasses 980 buildings.
+             </br>Key Highlights include 
+     </br>
+1. *Must-see Attractions*: Hall of Supreme Harmony, Imperial Garden  </br>
+2. *Ticket Prices*: $10-$15  </br>
+3. *Opening Hours*: 8:30 AM-5 PM (April-Oct), 8:30 AM-4:30 PM (Nov-Mar)  </br>
+4. *Historical Significance*: Symbolizing China's rich history
+          </p>
+          <a
+            href="https://en.m.wikipedia.org/wiki/Forbidden_City"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>3. Li River and Guilin National Park</h2>
+          <img src="./9k=.jpg" />
+          <p>
+Guilin National Park, Guangxi, boasts breathtaking karst landscapes. Visitors enjoy boat cruises, hiking and rock climbing amidst stunning rivers, valleys and mountains.
+
+ </br>Key Highlights: </br>
+
+1. *Scenic Spots*: Elephant Trunk Hill, Reed Flute Cave</br>
+2. *Activities*: Boat cruises, hiking, rock climbing</br>
+3. *Best Time*: Spring (March-May) and autumn (Sept-Nov)</br>
+4. *Ticket Prices*: $20-$30 (boat cruises), $10-$20 (park entrance)
+          </p>
+          <a
+            href="https://en.m.wikipedia.org/wiki/Li_River"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>4. Terracotta Warriors*
+</h2>
+          <img src="./images.jpg" />
+          <p>
+            Discovered in 1974, Xi'an's Terracotta Warriors date back to 210 BCE. Over 8,000 life-sized soldiers stand guard.
+
+ </br>Key Highlights: </br>
+
+1. *Pits*: Pit 1, Pit 2, Pit 3, Museum </br>
+2. *Ticket Prices*: $20-$30 </br>
+3. *Opening Hours*: 8:30 AM-6 PM (April-Oct), 8:30 AM-5 PM (Nov-Mar)  </br>
+4. *Historical Significance*: Ancient archaeological wonder
+          </p>
+          <a
+            href="https://en.m.wikipedia.org/wiki/Terracotta_Army"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+      </ul>
+
+      <div class="ads">
+        <img src="./../ads.jpeg" alt="" />
+      </div>
+    </div>
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+  </body>
+</html>

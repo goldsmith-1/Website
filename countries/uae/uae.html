@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../country-attraction.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+        <ul>
+          <li><a href="./../../index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="country-header">
+      <div>
+        <img src="./Flag_of_the_United_Arab_Emirates.svg.png" />
+      </div>
+      <div class="country-brief">
+        <h1>United Arab Emirates</h1>
+        <h2>
+          Motto: الله الوطن الرئيس
+          "God, Nation, President"        </h2>
+        <span>By: Ighokido Efe Bright (2023/c/csc/0350)</span>
+      </div>
+    </header>
+    <div class="country-container">
+      <ul class="attractions">
+        <li class="attraction-item">
+          <h2>1. Snoopy Island</h2>
+          <img src="./monument_38 (1).jpg" />
+          <p>
+            True to its name – resembling the famous Snoopy cartoon character – this island is located off Al Aqah beach and is considered one of the most important tourist destinations in Fujairah, thanks to its natural landscape and captivating ambiance. Snoopy Island attracts water sports enthusiasts, as it offers countless water activities and exciting natural surroundings that make for a wonderful adventure.  
+          </p>
+          <a
+            href="https://www.moec.gov.ae/en/tourist-attractions?delta=40"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>2. Al Bidyah Mosque</h2>
+          <img src="./monument_39.jpg" />
+          <p>
+            This historic mosque is nestled between Khor Fakkan and Dibbah Al Fujairah and is the oldest mosque in the UAE, with its construction dating back to the year 1446. It boasts a unique architecture style with four domes, making it a popular tourist destination for residents and visitors alike.             </br>Key Highlights include 
+     
+          </p>
+          <a
+            href="https://www.moec.gov.ae/en/tourist-attractions?delta=40"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>3. Gardens and Parks</h2>
+          <img src="./monument_34.jpg" />
+          <p>
+            With a multitude of gardens and parks throughout the emirates, it is sure to have something for everyone. For those with a penchant for beach gardens, Abu Dhabi Corniche, Mamzar Park, Dubai Creek Park and Al Majaz Waterfront in Sharjah will not disappoint. Desert parks include Jebel Hafit Desert Park in Al Ain and Mushrif Park in Dubai; whereas themed parks – such as water parks – including Murjan Splash Park in Abu Dhabi, Butterfly Gardens in Dubai and Sharjah and Dubai Garden Glow all offer a memorable experience to visitors. Ecological gardens like Safari Dubai are a must-see, as they feature a wide variety of animals in their natural habitats.
+ 
+          </p>
+          <a
+            href="https://www.moec.gov.ae/en/tourist-attractions?delta=40"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>4. Sheikh Zayed Grand Mosque
+</h2>
+          <img src="monument_14.jpg" />
+          <p>
+            One of the largest mosques in the world today, Sheikh Zayed Grand Mosque is an architectural masterpiece in its own right, as it combines various architectural styles. The mosque features 82 domes and was built under the orders of the late Sheikh Zayed Bin Sultan Al Nahyan as a symbol representing the message of peace, tolerance and coexistence preached by Islam.
+ 
+          </p>
+          <a
+            href="https://www.moec.gov.ae/en/tourist-attractions?delta=40"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+      </ul>
+
+      <div class="ads">
+        <img src="./../ads.jpeg" alt="" />
+      </div>
+    </div>
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+  </body>
+</html>

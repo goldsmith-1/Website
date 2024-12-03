@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../country-attraction.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+        <ul>
+          <li><a href="./../../index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="country-header">
+      <div>
+        <img src="./egypt-flag.png" />
+      </div>
+      <div class="country-brief">
+        <h1>Egypt</h1>
+        <h2>
+          Egypt's motto is Jumhūrīyat Miṣr al-ʻArabīyah, which is Arabic for
+          "Arab Republic of Egypt". It appears on Egypt's coat of arms, which
+          was adopted in 1984.
+        </h2>
+        <span>By: Adaeze Imelda Alumonah (30083210)</span>
+      </div>
+    </header>
+    <div class="country-container">
+      <ul class="attractions">
+        <li class="attraction-item">
+          <h2>1. Temple of Isis</h2>
+          <img src="./1.avif" />
+          <p>
+            Built to honour the goddess Isis, this was the last temple built in
+            the classical Egyptian style. Construction began around 690 BC, and
+            it was one of the last outposts where the goddess was worshipped.
+            The cult of Isis continued here until at least AD 550. The boat
+            leaves you near the Kiosk of Nectanebo, the oldest part, and the
+            entrance to the temple is marked by the 18m-high first pylon with
+            reliefs of Ptolemy XII Neos Dionysos smiting enemies.
+          </p>
+          <a
+            href="https://www.lonelyplanet.com/egypt/nile-valley/philae-agilkia-island/attractions/temple-of-isis/a/poi-sig/1050336/355252"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>2. White Desert National Park</h2>
+          <img src="./2.avif" />
+          <p>
+            Upon first glimpse of the 300-sq-km national park of the White
+            Desert, you’ll feel like Alice through the looking-glass. About 20km
+            northeast of Farafra, on the east side of the road, blinding-white
+            chalk rock spires sprout almost supernaturally from the ground, each
+            frost-coloured lollipop licked into a surreal landscape of familiar
+            and unfamiliar shapes by the dry desert winds.
+          </p>
+          <a
+            href="https://www.lonelyplanet.com/egypt/western-desert/attractions/white-desert-national-park/a/poi-sig/1498679/355269"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>3. Valley of the Kings</h2>
+          <img src="./3.avif" />
+          <p>
+            The west bank of Luxor had been the site of royal burials since
+            around 2100 BC, but it was the pharaohs of the New Kingdom period
+            (1550–1069 BC) who chose this isolated valley dominated by the
+            pyramid-shaped mountain peak of Al Qurn (The Horn). Once called the
+            Great Necropolis of Millions of Years of Pharaoh, or the Place of
+            Truth, the Valley of the Kings has 63 magnificent royal tombs.
+          </p>
+          <a
+            href="https://www.lonelyplanet.com/egypt/nile-valley/luxor/attractions/valley-of-the-kings/a/poi-sig/437492/355253"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>4. Mt Sinai</h2>
+          <img src="./3.avif" />
+          <p>
+            Known locally as Gebel Musa, Mt Sinai is revered by Christians,
+            Muslims and Jews, all of whom believe that God delivered his Ten
+            Commandments to Moses at its summit. The mountain is easy and
+            beautiful to climb, and offers a taste of the magnificence of
+            southern Sinai’s high mountain region. For pilgrims, it also offers
+            a moving glimpse into biblical times. All hikers must be accompanied
+            by a local Bedouin guide (hired from the monastery car park).
+          </p>
+          <a
+            href="https://www.lonelyplanet.com/egypt/st-katherine-protectorate/attractions/mt-sinai/a/poi-sig/1334165/1295713"
+            target="_blank"
+            >Learn more</a
+          >
+        </li>
+      </ul>
+
+      <div class="ads">
+        <img src="./../ads.jpeg" alt="" />
+      </div>
+    </div>
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+  </body>
+</html>

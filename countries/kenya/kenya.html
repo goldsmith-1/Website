@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../country-attraction.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+        <ul>
+          <li><a href="./../../index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="country-header">
+      <div>
+        <img src="./Kenya-Flag.jpg" />
+      </div>
+      <div class="country-brief">
+        <h1>Kenya</h1>
+        <h2>
+          The motto of Kenya is "Harambee", which translates
+          to "Let us all pull together".
+        </h2>
+        <span>By: Aderibigbe Otunde (2023/C/DSC/0153)</span>
+      </div>
+    </header>
+    <div class="country-container">
+      <ul class="attractions">
+        <li class="attraction-item">
+          <h2>1. SAMBURU-NATIONAL-RESERVE </h2>
+          <img src="./SAMBURU-Tourist.jpg" />
+          <p>
+            "Samburu National Reserve, a premier safari destination in East Africa,
+            is home to a diverse array of rare wildlife species.The reserve is famous
+            for its Grevy Zebras, Somali Ostriches, and thriving elephant population.
+            Large predators like lions and leopards roam the reserve,making it a thrilling
+            destination for wildlife enthusiasts. With over 450 bird species
+            Samburu offers an unforgettable safari experience in its pristine wilderness.
+          </p>
+          <a href="https://www.toureiffel.paris/en" target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>2. The Kenya Amboseli </h2>
+          <img src="./kenya-amboseli.jpg" />
+          <p>
+            Amboseli National Park is in southern Kenya. It’s known for
+            its large elephant herds and views of immense Mount Kilimanjaro, 
+            across the border in Tanzania.Observation Hill offers panoramas
+            of the peak and the park’s plains and swamps.Varied wildlife includes giraffes
+            zebras, cheetahs and hundreds of bird species.The western section is
+            dominated by vast Lake Amboseli, which is dry outside the rainy season.
+          </p>
+          <a href="https://www.bordeaux.com/us" target="_blank">Learn more</a>
+        </li>
+        <li class="attraction-item">
+          <h2>3. The Lake Victoria centre</h2>
+          <img src="./Lake-Victoria Kenya Tourist centre.jpg" />
+          <p>
+            Lake Victoria, the largest lake in Africa, borders Kenya, Uganda, and Tanzania.
+            On the Kenyan side, Lake Victoria in Kenya,the lakeside city of Kisumu,
+            offers visitors a chance to explore the lake’s vast waters and and surrounding scenery.
+            The lake is a critical resource for the local communities and a hub for fishing and boat tours.
+            Nearby tourist attractions include the Kisumu Impala Sanctuary and Dunga Hill Camp,
+            offering unique wildlife experiences and stunning sunset views over the lake.
+            of the finest wines in Europe, Alsace offers a unique and memorable
+
+          </p>
+          <a href="https://www.toureiffel.paris/en" target="_blank"
+            >Learn more</a
+          >
+        </li>
+      </ul>
+
+      <div class="ads">
+        <img src="./../ads.jpeg" alt="" />
+      </div>
+    </div>
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+  </body>
+</html>

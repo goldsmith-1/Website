@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../country-attraction.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+        <ul>
+          <li><a href="./../../index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="country-header">
+      <div>
+        <img src="./France-flag.webp" />
+      </div>
+      <div class="country-brief">
+        <h1>France</h1>
+        <h2>
+          The motto of France is Liberté, Égalité, Fraternité, which translates
+          to "Liberty, Equality, Fraternity".
+        </h2>
+        <span>By: Ayodele Samuel Adebayo (2023/A/SENG/0086)</span>
+      </div>
+    </header>
+    <div class="country-container">
+      <ul class="attractions">
+        <li class="attraction-item">
+          <h2>1. The Eiffel Tower</h2>
+          <img src="./eiffel-tower.jpg" />
+          <p>
+            The Eiffel Tower, an iconic symbol of Paris, stands at 330 meters
+            tall and attracts nearly 7 million visitors each year, making it one
+            of the most visited monuments in the world. Constructed by Gustave
+            Eiffel for the 1889 Exposition Universelle, this architectural
+            marvel offers breathtaking panoramic views of the city from its
+            observation decks. Beyond sightseeing, visitors can enjoy dining at
+            the tower’s restaurants, exploring interactive exhibits, and
+            experiencing a unique part of French history and culture.
+          </p>
+          <a href="https://www.toureiffel.paris/en" target="_blank"
+            >Learn more</a
+          >
+        </li>
+        <li class="attraction-item">
+          <h2>2. The Eiffel Tower</h2>
+          <img src="./Bordeaux.jpg" />
+          <p>
+            You should visit Bordeaux, a vibrant port city on the Garonne River
+            in southwestern France, which serves as the capital of the
+            Nouvelle-Aquitaine region. Known for its rich history, stunning
+            architecture, and renowned wine culture, Bordeaux offers visitors a
+            blend of cultural heritage and scenic beauty. Exploring the city and
+            its surrounding region, travelers can experience the unique charm of
+            the “Bordelais” lifestyle and immerse themselves in one of France’s
+            most celebrated destinations.
+          </p>
+          <a href="https://www.bordeaux.com/us" target="_blank">Learn more</a>
+        </li>
+        <li class="attraction-item">
+          <h2>3. Alsace Region</h2>
+          <img src="./Neuf-Brisach.jpg" />
+          <p>
+            You should visit the Alsace region for its enchanting blend of
+            French and German culture, charming medieval villages, and
+            picturesque vineyards. Nestled along the Rhine River, Alsace is
+            famous for its colorful half-timbered houses, scenic wine routes,
+            and Christmas markets that come alive with festive spirit. From
+            exploring historic towns like Strasbourg and Colmar to tasting some
+            of the finest wines in Europe, Alsace offers a unique and memorable
+            experience for any traveler.
+          </p>
+          <a href="https://www.toureiffel.paris/en" target="_blank"
+            >Learn more</a
+          >
+        </li>
+      </ul>
+
+      <div class="ads">
+        <img src="./../ads.jpeg" alt="" />
+      </div>
+    </div>
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+  </body>
+</html>

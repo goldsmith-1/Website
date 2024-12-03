@@ -1,0 +1,91 @@
+.country-header {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 10px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.country-header img {
+  max-width: 120px;
+  max-height: 120px;
+  width: 100%;
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+.country-header .country-brief {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.country-header .country-brief span {
+  color: #a1a1aa;
+}
+
+.country-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+
+.country-container .ads {
+  max-width: 300px;
+  position: fixed;
+  right: 2rem;
+  bottom: 4rem;
+  display: none;
+}
+
+.country-container .ads img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.attractions {
+  max-width: 765px;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.attraction-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.attraction-item h2 {
+  color: white;
+  margin-bottom: 0px;
+}
+.attraction-item p {
+  font-family: "Poppins";
+}
+
+.attraction-item img {
+  max-width: 765px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.attraction-item a {
+  color: #3b82f6;
+}
+
+@media (min-width: 1024px) {
+  .country-container .ads {
+    display: block;
+  }
+
+  .country-header img {
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+  }
+}

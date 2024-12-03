@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../country-attraction.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+        <ul>
+          <li><a href="./../../index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="country-header">
+      <div>
+        <img src="NG.png" />
+      </div>
+      <div class="country-brief">
+        <h1>Nigeria</h1>
+        <h2>The motto of Nigeria is Unity and Faith, Peace and Progress.</h2>
+        <span>By: OluwaMosope Daniela Samuel (2023/C/SEGN/0317) </span>
+      </div>
+    </header>
+    <div class="country-container">
+      <ul class="attractions">
+        <li class="attraction-item">
+          <h2>1. Lagos</h2>
+          <img src="./Lagos.png" />
+          <p>
+            Lagos is a delight on many levels. The city's coastline is already a
+            busy corridor for resorts and beach houses. On weekends, Lagosians
+            pour into a long stretch of private beaches to party and enjoy a
+            suite of water-based sports. For the best beach experiences, take a
+            short boat ride to Tarkwa Bay or hop in a car to Landmark Beach.
+          </p>
+        </li>
+        <li class="attraction-item">
+          <h2>2. Abuja</h2>
+          <img src="./jabi-lake-park-abuja.jpg" />
+          <p>
+            Whether you're traveling solo or as a group, Abuja is your best
+            introduction to Nigeria. By design, it is a city for holidaymaking:
+            hills, public gardens and leisure parks dot the cityscape, right
+            through its residential districts, so you're guaranteed ample green
+            spaces. Millenium Park's landscaped grounds attract hundreds of
+            picnickers; rent a mat inside the park and just chill. Aso Rock,
+            where Nigeria's presidential palace gets its name, looms nicely in
+            the background.
+          </p>
+        </li>
+        <li class="attraction-item">
+          <h2>3. Enugu</h2>
+          <img src="./enuggu.jpg" />
+          <p>
+            Enugu is the heartland of Nigeria's South-East region, a status it
+            earned in the early 1900s when huge reserves of coal were discovered
+            in its hills. Today, more than a century later, its tranquil
+            neighborhoods, pine forests and public parks makes it one of
+            Nigeria's touristy cities.
+          </p>
+        </li>
+        <li class="attraction-item">
+          <h2>4. Calaba</h2>
+          <img src="./the-waterfall-at-theCalaba.jpg" />
+          <p>
+            Tourists come to Calabar to connect a number of nature and heritage
+            sites: the Slave History Museum, Cross River National Park, Obudu
+            Mountain Resort and the Afi Mountain Drill Sanctuary.
+          </p>
+        </li>
+      </ul>
+
+      <div class="ads">
+        <img src="./../ads.jpeg" alt="" />
+      </div>
+    </div>
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+  </body>
+</html>

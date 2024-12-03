@@ -1,0 +1,253 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Body and overall background */
+body {
+  background-color: #2e2c2c;
+  color: #333;
+}
+
+/* Navigation Bar Styling */
+nav {
+  color: white;
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #374151;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: padding 0.3s ease;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+/* Header styling */
+.home-header {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header h1 {
+  color: white;
+}
+
+header h2 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #e4e4e7;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #71717a;
+  margin-bottom: 30px;
+}
+p {
+  color: white;
+  font-style: italic;
+  font-size: large;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.gallery-container {
+  min-height: 100vh;
+}
+
+/*  Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  padding: 0 20px;
+  margin: auto;
+  width: 95%;
+  max-width: 1200px;
+}
+
+.gallery-item {
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  object-fit: cover; /* Makes sure the image maintains aspect ratio */
+  border-radius: 15px 0px 0px;
+  transition: transform 0.4s ease-in-out;
+  height: 300px;
+}
+
+/* Hover Effects */
+.gallery-item:hover img {
+  transform: scale(1.1); /* Zoom in the image */
+}
+
+.gallery-item:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  nav .logo {
+    font-size: 1.2rem;
+  }
+
+  nav ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Description under each image */
+.gallery-title {
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 10px 0;
+  color: #333;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-title a {
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
+
+/* Gallery Item Image Styling */
+.gallery-item img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+  height: 300px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Hover Effects */
+.gallery-item:hover img {
+  transform: scale(1.1); /*Zoom in the image */
+  border: 5px solid #ffffff; /*hover border color*/
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Overlay styling */
+.gallery-item-overlay-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 100; /* Above other elements */
+}
+
+.gallery-item-overlay-effect img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+/* Descriptions */
+.gallery-item-overlay {
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+  visibility: hidden;
+}
+
+.gallery-item-overlay h2 {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  height: 100%;
+  visibility: visible;
+}

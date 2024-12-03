@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../../style.css" />
+    <link rel="stylesheet" href="./../country-attraction.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+        <ul>
+          <li><a href="./../../index.html">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="country-header">
+      <div>
+        <img src="./america-flag.webp" alt="American Flag" />
+      </div>
+      <div class="country-brief">
+        <h1>United States of America</h1>
+        <h2>
+          Known for its motto "In God We Trust," the USA is a land of diverse
+          landscapes, cultures, and iconic landmarks.
+        </h2>
+        <span>By: Ugwor Chiedozie Nwaeligwe ()</span>
+      </div>
+    </header>
+
+    <div class="country-container">
+      <ul class="attractions">
+        <!-- Statue of Liberty -->
+        <li class="attraction-item">
+          <h2>1. Statue of Liberty</h2>
+          <a href="https://www.nps.gov/stli/index.htm"
+            ><img src="./statue-of-liberty.png" alt="Statue of Liberty"
+          /></a>
+          <p>
+            The Statue of Liberty, located on Liberty Island in New York Harbor,
+            is a universal symbol of freedom and democracy. A gift from France,
+            this colossal statue has welcomed immigrants arriving in New York
+            for over a century.
+          </p>
+          <a href="https://www.nps.gov/stli/index.htm" target="_blank"
+            >Learn more</a
+          >
+        </li>
+
+        <!-- Golden Gate Bridge -->
+        <li class="attraction-item">
+          <h2>2. Golden Gate Bridge</h2>
+          <a href="https://www.goldengate.org/"
+            ><img src="./golden-gate-bridge.jpg" alt="Golden Gate Bridge"
+          /></a>
+          <p>
+            The Golden Gate Bridge, spanning the Golden Gate Strait in San
+            Francisco, California, is a remarkable feat of engineering and one
+            of the most photographed bridges in the world.
+          </p>
+          <a href="https://www.goldengate.org/" target="_blank">Learn more</a>
+        </li>
+
+        <!-- Grand Canyon -->
+        <li class="attraction-item">
+          <h2>3. Grand Canyon</h2>
+          <a href="https://www.nps.gov/grca/index.htm"
+            ><img src="./grand-canyon.jpg" alt="Grand Canyon"
+          /></a>
+          <p>
+            The Grand Canyon, a UNESCO World Heritage site in Arizona, offers
+            breathtaking views of layered red rock that reveal millions of years
+            of geological history. It's a must-see natural wonder for any
+            traveler.
+          </p>
+          <a href="https://www.nps.gov/grca/index.htm" target="_blank"
+            >Learn more</a
+          >
+        </li>
+
+        <!-- Mount Rushmore -->
+        <li class="attraction-item">
+          <h2>4. Mount Rushmore</h2>
+          <a href="https://www.nps.gov/moru/index.htm"
+            ><img src="./mount-rushmore.webp" alt="Mount Rushmore"
+          /></a>
+          <p>
+            Mount Rushmore National Memorial in South Dakota features the carved
+            faces of U.S. presidents George Washington, Thomas Jefferson,
+            Theodore Roosevelt, and Abraham Lincoln, symbolizing American
+            history and ideals.
+          </p>
+          <a href="https://www.nps.gov/moru/index.htm" target="_blank"
+            >Learn more</a
+          >
+        </li>
+      </ul>
+
+      <!-- Advertisements Section -->
+      <div class="ads">
+        <img src="./../ads.jpeg" alt="Advertisement" />
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+  </body>
+</html>
