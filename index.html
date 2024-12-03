@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="container">
+        <div class="logo">MIVA Travel Guide</div>
+      </div>
+    </nav>
+
+    <header class="home-header">
+      <h1>Explore the World, One Destination at a Time ✈️</h1>
+      <h2>
+        Discover top travel destinations and plan your next adventure with
+        detailed guides and insider tips.
+      </h2>
+    </header>
+    <div class="gallery-container">
+      <div class="gallery">
+        <a href="countries/france/france.html" class="gallery-item">
+          <img src="countries/france/eiffel-tower.jpg" alt="Image 1" />
+          <div class="gallery-title">France</div>
+          <div class="gallery-item-overlay">
+            <h1>France</h1>
+            <h2>
+              France, officially the French Republic, is a Western European
+              country with overseas regions and territories across South
+              America, the North Atlantic, Oceania, and the Indian Ocean, giving
+              it one of the world’s largest exclusive economic zones.
+            </h2>
+          </div>
+        </a>
+
+        <a href="countries/nigeria/index.html" class="gallery-item">
+          <img src="countries/Nigeria/Lagos.png" alt="Image 1" />
+          <div class="gallery-title">Nigeria</div>
+          <div class="gallery-item-overlay">
+            <h1>Nigeria</h1>
+            <h2>
+              Nigeria, an African country on the Gulf of Guinea, has many
+              natural landmarks and wildlife reserves. Protected areas such as
+              Cross River National Park and Yankari National Park have
+              waterfalls, dense rainforest, savanna and rare primate habitats.
+              One of the most recognizable sites is Zuma Rock, a 725m-tall
+              monolith outside the capital of Abuja that’s pictured on the
+              national currency.
+            </h2>
+          </div>
+        </a>
+        <a href="countries/america/america.html" class="gallery-item">
+          <img
+            src="countries/america/statue-of-liberty.png"
+            alt="Image of America"
+          />
+          <div class="gallery-title">America</div>
+          <div class="gallery-item-overlay">
+            <h1>America</h1>
+            <h2>
+              The United States of America, a vast nation of 50 states covering
+              North America, is renowned for its cultural diversity,
+              technological innovations, and iconic landmarks like the Statue of
+              Liberty, Golden Gate Bridge, and the Grand Canyon.
+            </h2>
+          </div>
+        </a>
+        <a href="countries/kenya/kenya.html" class="gallery-item">
+          <img src="countries/kenya/SAMBURU-Tourist.jpg" alt="Image of Kenya" />
+          <div class="gallery-title">Kenya</div>
+          <div class="gallery-item-overlay">
+            <h1>Kenya</h1>
+            <h2>
+              Kenya is a country in East Africa with coastline on the Indian
+              Ocean. It encompasses savannah, lakelands, the dramatic Great Rift
+              Valley and mountain highlands. It's also home to wildlife like
+              lions, elephants and rhinos. From Nairobi, the capital, safaris
+              visit the Maasai Mara Reserve, known for its annual wildebeest
+              migrations, and Amboseli National Park, offering views of
+              Tanzania's 5,895m Mt. Kilimanjaro
+            </h2>
+          </div>
+        </a>
+        <a href="countries/egypt/egypt.html" class="gallery-item">
+          <img src="countries/egypt/egypt-cave.jpg" alt="Image of Egypt" />
+          <div class="gallery-title">Egypt</div>
+          <div class="gallery-item-overlay">
+            <h1>Egypt</h1>
+            <h2>
+              Egypt, a country linking northeast Africa with the Middle East,
+              dates to the time of the pharaohs. Millennia-old monuments sit
+              along the fertile Nile River Valley, including Giza's colossal
+              Pyramids and Great Sphinx as well as Luxor's hieroglyph-lined
+              Karnak Temple and Valley of the Kings tombs. The capital, Cairo,
+              is home to Ottoman landmarks like Muhammad Ali Mosque and the
+              Egyptian Museum, a trove of antiquities.
+            </h2>
+          </div>
+        </a>
+<!china by maimuna>
+    <a href="countries/china/index.html" class="gallery-item">
+          <img src="countries/china/china-wall.jpg" alt="Image of Egypt" />
+          <div class="gallery-title">China</div>
+          <div class="gallery-item-overlay">
+            <h1>China</h1>
+            <h2>
+              China, officially the People's Republic of China, is the world's most populous nation (1.4 billion). Ancient civilization, vibrant culture, stunning landscapes, and rapid modernization define this vast, diverse country."
+            </h2>
+          </div>
+        </a>
+        <a href="countries/uae/uae.html" class="gallery-item">
+          <img src="countries/uae/museum.jpg" alt="Image of uae museum of the future" />
+          <div class="gallery-title">United Arab Emirates</div>
+          <div class="gallery-item-overlay">
+            <h1>United Arab Emirates</h1>
+            <h2>
+              The United Arab Emirates, or simply the Emirates, is a country in West Asia, in the Middle East, at the eastern end of the Arabian Peninsula. It is a federal, elective monarchy composed of seven emirates, with Abu Dhabi as its capital.            </h2>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+
+    <!-- Overlay for the zoom effect -->
+    <div
+      id="gallery-item-overlay-effect"
+      class="gallery-item-overlay-effect"
+      onclick="closeOverlay()"
+    ></div>
+  </body>
+</html>
